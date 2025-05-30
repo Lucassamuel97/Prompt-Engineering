@@ -12,6 +12,15 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 | [One-shot prompting](one-shot-few-shot.md)      | Fornece **um exemplo** antes da tarefa.                                  | `'Olá' → 'Hello'. Traduza: 'Bom dia' →`                        |
 | [Few-shot prompting](one-shot-few-shot.md)       | Fornece **poucos exemplos (2-5)** para orientar o modelo.                | `'Olá' → 'Hello', 'Boa noite' → 'Good night'. Traduza: 'Eu amo aprender' →` |
 
+### Comparativo
+
+| Tipo de Prompt | Exemplos | Precisão | Controle de Saída | Custo |
+|----------------|----------|----------|-------------------|-------|
+| Zero-Shot      | Nenhum   | Média    | Baixo             | Baixo |
+| One-Shot       | 1        | Média+   | Médio             | Médio |
+| Few-Shot       | 2-5      | Alta     | Alto              | Alto  |
+
+---
 ## Prompts Elaborados 
 | Nome                         | Descrição                                                                 | Exemplo                                                         |
 |------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------|
