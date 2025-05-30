@@ -4,13 +4,17 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 
 ---
 
-## Variações Avançadas
+## Prompts comumente utilizados 
 
 | Nome                         | Descrição                                                                 | Exemplo                                                         |
 |------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------|
-| **Zero-shot prompting**      | A IA recebe apenas a tarefa, sem exemplos.                               | `Traduza para inglês: 'Eu gosto de café'.`                     |
+| [Zero-shot Prompting](zero_shot_prompting.md)     | A IA recebe apenas a tarefa, sem exemplos.                               | `Traduza para inglês: 'Eu gosto de café'.`                     |
 | **One-shot prompting**       | Fornece **um exemplo** antes da tarefa.                                  | `'Olá' → 'Hello'. Traduza: 'Bom dia' →`                        |
 | **Few-shot prompting**       | Fornece **poucos exemplos (2-5)** para orientar o modelo.                | `'Olá' → 'Hello', 'Boa noite' → 'Good night'. Traduza: 'Eu amo aprender' →` |
+
+## Prompts Elaborados 
+| Nome                         | Descrição                                                                 | Exemplo                                                         |
+|------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------|
 | **Chain-of-thought prompting** | Estimula a IA a pensar em etapas antes da resposta final.               | `Explique passo a passo como calcular 124 x 36 mentalmente.`   |
 | **Self-consistency prompting** | Usa várias execuções com chain-of-thought e escolhe a mais comum.       | *(Executado internamente — roda múltiplas vezes e seleciona a resposta mais frequente.)* |
 | **Reflexive prompting (Self-reflection)** | Pede que a IA **avalie, critique ou melhore sua própria resposta.** | `Releia sua resposta anterior e sugira melhorias.`             |
@@ -33,52 +37,6 @@ Tree-of-thought → Explora vários caminhos e escolhe o melhor
 Multimodal → Texto + imagem + áudio + vídeo
 Dynamic → Prompts gerados dinamicamente no contexto
 ReAct → IA pensa, executa ações, volta a pensar (ciclo)
-
-# Zero-shot Prompting
-
-## 📖 Descrição
-Zero-shot prompting é a técnica de solicitar que o modelo realize uma tarefa **sem fornecer exemplos** anteriores, apenas com uma **instrução clara em linguagem natural**.
-
----
-
-## 🔬 Fundamento
-- Baseado no conceito de **Zero-shot learning** de Machine Learning.
-- O modelo utiliza apenas o conhecimento adquirido durante o treinamento para executar a tarefa.
-- Popularizado pelo paper **"Language Models are Few-Shot Learners" (GPT-3, 2020)**.
-
----
-
-## 🚀 Quando Utilizar
-✔️ **Ideal para:**
-- Tarefas simples e objetivas (tradução, resumo, definição, perguntas diretas).
-- Obter respostas rápidas sem configurações complexas.
-
-⚠️ **Limitações:**
-- Menor precisão em tarefas complexas ou sensíveis.
-- Pouco controle sobre tom, estilo ou formato específico da saída.
-
----
-
-## 📦 Exemplos
-Crie uma função em Python que calcule o fatorial de um número.
-```bash
-➡️ 
-```python
-def fatorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * fatorial(n-1)
-
-```
----
-
-## 📚 Referência  
-📄 Paper: [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) https://arxiv.org/abs/2005.14165
-
----
-
-
 
 ## 📚 Referências e Leitura Recomendada
 
