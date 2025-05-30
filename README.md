@@ -9,8 +9,8 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 | Nome                         | Descrição                                                                 | Exemplo                                                         |
 |------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------|
 | [Zero-shot Prompting](zero_shot_prompting.md)     | A IA recebe apenas a tarefa, sem exemplos.                               | `Traduza para inglês: 'Eu gosto de café'.`                     |
-| **One-shot prompting**       | Fornece **um exemplo** antes da tarefa.                                  | `'Olá' → 'Hello'. Traduza: 'Bom dia' →`                        |
-| **Few-shot prompting**       | Fornece **poucos exemplos (2-5)** para orientar o modelo.                | `'Olá' → 'Hello', 'Boa noite' → 'Good night'. Traduza: 'Eu amo aprender' →` |
+| [One-shot prompting](one-shot-few-shot.md)      | Fornece **um exemplo** antes da tarefa.                                  | `'Olá' → 'Hello'. Traduza: 'Bom dia' →`                        |
+| [Few-shot prompting](one-shot-few-shot.md)       | Fornece **poucos exemplos (2-5)** para orientar o modelo.                | `'Olá' → 'Hello', 'Boa noite' → 'Good night'. Traduza: 'Eu amo aprender' →` |
 
 ## Prompts Elaborados 
 | Nome                         | Descrição                                                                 | Exemplo                                                         |
