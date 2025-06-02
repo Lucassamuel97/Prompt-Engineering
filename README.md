@@ -24,7 +24,7 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 ## Prompts Elaborados 
 | Nome                         | Descrição                                                                 | Exemplo                                                         |
 |------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------|
-| **Chain-of-thought prompting** | Estimula a IA a pensar em etapas antes da resposta final.               | `Explique passo a passo como calcular 124 x 36 mentalmente.`   |
+| [Chain-of-thought prompting](chain_of_thought.md) | Estimula a IA a pensar em etapas antes da resposta final.               | `Explique passo a passo como calcular 124 x 36 mentalmente.`   |
 | **Self-consistency prompting** | Usa várias execuções com chain-of-thought e escolhe a mais comum.       | *(Executado internamente — roda múltiplas vezes e seleciona a resposta mais frequente.)* |
 | **Reflexive prompting (Self-reflection)** | Pede que a IA **avalie, critique ou melhore sua própria resposta.** | `Releia sua resposta anterior e sugira melhorias.`             |
 | **Tree-of-thought prompting** | A IA explora diferentes caminhos de raciocínio em formato de árvore, escolhendo os melhores. | `Liste várias formas de resolver esse problema e selecione a mais eficiente.` |
