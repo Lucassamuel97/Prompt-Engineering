@@ -36,16 +36,20 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 
 ## Resumo Visual Rápido
 
-Zero-shot → Só a tarefa
-One-shot → 1 exemplo
-Few-shot → Alguns exemplos
-Chain-of-thought → Pense passo a passo
-Self-consistency → Escolhe a resposta mais comum de vários pensamentos
-Reflexive → IA revisa sua própria resposta
-Tree-of-thought → Explora vários caminhos e escolhe o melhor
-Multimodal → Texto + imagem + áudio + vídeo
-Dynamic → Prompts gerados dinamicamente no contexto
-ReAct → IA pensa, executa ações, volta a pensar (ciclo)
+```markdown
+| 🏷️ Prompt             | 📝 Resumo Visual                                  |
+|-----------------------|---------------------------------------------------|
+| Zero-shot             | Só a tarefa                                       |
+| One-shot              | 1 exemplo                                         |
+| Few-shot              | Alguns exemplos                                   |
+| Chain-of-thought      | Pense passo a passo                               |
+| Self-consistency      | Escolhe a resposta mais comum de vários pensamentos|
+| Reflexive             | IA revisa sua própria resposta                    |
+| Tree-of-thought       | Explora vários caminhos e escolhe o melhor        |
+| Multimodal            | Texto + imagem + áudio + vídeo                    |
+| Dynamic               | Prompts gerados dinamicamente no contexto         |
+| ReAct                 | IA pensa, executa ações, volta a pensar (ciclo)   |
+```
 
 ## 📚 Referências e Leitura Recomendada
 
