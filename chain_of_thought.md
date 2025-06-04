@@ -270,3 +270,12 @@ Escreva seu raciocínio entre `<thought>` e o resumo técnico final entre `<answ
 O backend deve oferecer autenticação robusta, modelagem flexível de usuários e times, suporte a categorias customizáveis e tarefas compartilhadas, controle granular de permissões, endpoints RESTful bem definidos, persistência consistente dos dados e mecanismos para lidar com concorrência e observabilidade. Isso garante colaboração eficiente, segurança e escalabilidade para a aplicação de Todo List colaborativa.
 </answer>
 ```
+
+
+# Comparativo
+
+| Tipo de Prompt      | Requer Exemplos | Gera Raciocínio | Ideal para                               |
+| :------------------ | :-------------- | :-------------- | :--------------------------------------- |
+| Zero-Shot           | Nenhum          | Média           | Baixo                                    |
+| One-Shot / Few-Shot | Sim             | Opcional        | Imitar formato, estilo ou padrões        |
+| Chain of Thought    | Indiferente     | Sim             | Lógica, planejamento, análise, debugging |
