@@ -12,14 +12,6 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 | [One-shot prompting](one-shot-few-shot.md)      | Fornece **um exemplo** antes da tarefa.                                  | `'Olá' → 'Hello'. Traduza: 'Bom dia' →`                        |
 | [Few-shot prompting](one-shot-few-shot.md)       | Fornece **poucos exemplos (2-5)** para orientar o modelo.                | `'Olá' → 'Hello', 'Boa noite' → 'Good night'. Traduza: 'Eu amo aprender' →` |
 
-### Comparativo
-
-| Tipo de Prompt | Exemplos | Precisão | Controle de Saída | Custo |
-|----------------|----------|----------|-------------------|-------|
-| Zero-Shot      | Nenhum   | Média    | Baixo             | Baixo |
-| One-Shot       | 1        | Média+   | Médio             | Médio |
-| Few-Shot       | 2-5      | Alta     | Alto              | Alto  |
-
 ---
 ## Prompts Elaborados 
 | Nome                         | Descrição                                                                 | Exemplo                                                         |
@@ -33,7 +25,7 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 
 ---
 
-# Resumo comparativo: CoT, SoT, ToT
+## Resumo comparativo: CoT, SoT, ToT
 
 | Técnica                | Situação ideal                         | Justificativa                               | Exemplo de prompt                                                                                                                                                                                             |
 | :--------------------- | :------------------------------------- | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -44,7 +36,25 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 | ToT + SoT + CoT | Definir melhor stack tecnológica | Estrutura, múltiplas alternativas e raciocínio interno | "Compare as stacks Go, Node.js e Python para microserviços. Para cada uma, siga os tópicos: performance, ecossistema, produtividade, complexidade de deploy e casos de uso recomendados. Dentro de cada tópico, pense passo a passo. Ao final, recomende a stack ideal para um sistema com 10 microsserviços interconectados." |
 | ToT + SoT | Comparação de bancos de dados | Análise comparativa organizada por critérios | "Compare os tipos de banco de dados SQL, NoSQL e NewSQL para uma aplicação de leitura intensiva. Para cada um, responda usando os tópicos: modelo de dados, escalabilidade, latência, consistência e custo operacional. Ao final, indique qual abordagem é mais indicada para esse cenário." |
 
+### Casos de uso abordados
 
+| Técnica aplicada     | Situação                                                    | Justificativa                                                 |
+| :------------------- | :---------------------------------------------------------- | :------------------------------------------------------------ |
+| Chain of Thought (CoT) | Explicar por que um bug ocorre                              | Precisa de raciocínio encadeado com lógica explicada        |
+| Skeleton of Thought (SoT)| Especificar um módulo de autenticação com seções fixas    | Exige consistência e organização por tópicos                 |
+| Tree of Thought (ToT)  | Comparar 3 formas de aplicar cache (in-memory, Redis, CDN) | Exige exploração de alternativas e decisão final justificada  |
+| SoT + CoT            | Planejar arquitetura de um sistema com API, banco e autenticação | Exige estrutura e raciocínio técnico dentro de cada seção   |
+| ToT + SoT + CoT      | Definir melhor stack entre Go, Node.js e Python para microserviços | Requer estrutura, múltiplas alternativas e raciocínio interno completo |
+| ToT + SoT            | Comparar bancos SQL, NoSQL e NewSQL para leitura intensiva   | Múltiplas estratégias com análise técnica estruturada, sem exigir CoT |
+
+### Conclusão
+
+Cada técnica possui forças complementares:
+
+* **CoT** → Raciocínio lógico.
+* **SoT** → Organização e completude.
+* **ToT** → Comparação e tomada de decisão.
+---
 ## Resumo Visual Rápido
 
 ```markdown
@@ -61,7 +71,7 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 | Dynamic               | Prompts gerados dinamicamente no contexto         |
 | ReAct                 | IA pensa, executa ações, volta a pensar (ciclo)   |
 ```
-
+---
 ## 📚 Referências e Leitura Recomendada
 
 - [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
