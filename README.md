@@ -24,10 +24,9 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 ## Prompts Elaborados 
 | Nome                         | Descrição                                                                 | Exemplo                                                         |
 |------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Chain-of-thought prompting](chain_of_thought.md) | Estimula a IA a pensar em etapas antes da resposta final.               | `Explique passo a passo como calcular 124 x 36 mentalmente.`   |
 | [Skeleton of Thought (SoT)](skeleton_of_thought.md) | O modelo primeiro gera uma estrutura esquelética (um roteiro, tópicos ou plano) antes de gerar a resposta completa.       | `"Primeiro, gere os tópicos principais de um artigo sobre mudança climática. Depois, desenvolva cada tópico em parágrafos."`|
 | **Reflexive prompting (Self-reflection)** | Pede que a IA **avalie, critique ou melhore sua própria resposta.** | `Releia sua resposta anterior e sugira melhorias.`             |
-| **Tree-of-thought prompting** | A IA explora diferentes caminhos de raciocínio em formato de árvore, escolhendo os melhores. | `Liste várias formas de resolver esse problema e selecione a mais eficiente.` |
+| [Tree-of-thought (ToT)](tree_of_thought.md) | A IA explora diferentes caminhos de raciocínio em formato de árvore, escolhendo os melhores. | `Liste várias formas de resolver esse problema e selecione a mais eficiente.` |
 | **Multimodal prompting**     | Usa múltiplos tipos de entrada, como texto, imagem, áudio, vídeo.        | `Descreva essa imagem e sugira uma legenda criativa.`          |
 | **Dynamic prompting**        | O prompt é gerado dinamicamente, com base em dados, contexto ou histórico. | *(Usado em APIs e aplicações dinâmicas.)*                      |
 | **ReAct prompting**          | Combina **raciocínio (Reasoning)** com **ação (Action)**, permitindo que a IA pense, execute e continue iterando. | `Pense: o que falta? Aja: busque no banco de dados. Continue.` |
