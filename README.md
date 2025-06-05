@@ -33,6 +33,18 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 
 ---
 
+# Resumo comparativo: CoT, SoT, ToT
+
+| Técnica                | Situação ideal                         | Justificativa                               | Exemplo de prompt                                                                                                                                                                                             |
+| :--------------------- | :------------------------------------- | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Chain of Thought (CoT) | Explicar bugs                          | Raciocínio encadeado com lógica explicada   | "Explique passo a passo por que o código abaixo pode gerar um panic em Go. Analise como um engenheiro faria debug em produção."                                                                           |
+| Skeleton of Thought (SoT)| Especificar módulos com seções fixas | Exige consistência e organização por tópicos | "Crie uma especificação técnica para um módulo de autenticação JWT usando os seguintes tópicos: requisitos funcionais, modelo de dados, fluxos, validações, segurança e integração."                           |
+| Tree of Thought (ToT)  | Comparar opções (ex: cache)            | Exploração de alternativas e decisão justificada | "Considere três formas de aplicar cache em um sistema web: in-memory, Redis e CDN. Para cada uma, descreva a estratégia, vantagens, desvantagens e cenário ideal de uso. Ao final, selecione a melhor com base em latência, custo e simplicidade." |
+| SoT + CoT      | Planejamento de arquitetura     | Organização por tópicos com raciocínio detalhado | "Estruture a arquitetura de um sistema de Todo List com autenticação, API REST e persistência. Responda por tópicos: visão geral, autenticação, banco de dados, fluxos principais, escalabilidade. Em cada tópico, pense passo a passo como um arquiteto de software."                                            |
+| ToT + SoT + CoT | Definir melhor stack tecnológica | Estrutura, múltiplas alternativas e raciocínio interno | "Compare as stacks Go, Node.js e Python para microserviços. Para cada uma, siga os tópicos: performance, ecossistema, produtividade, complexidade de deploy e casos de uso recomendados. Dentro de cada tópico, pense passo a passo. Ao final, recomende a stack ideal para um sistema com 10 microsserviços interconectados." |
+| ToT + SoT | Comparação de bancos de dados | Análise comparativa organizada por critérios | "Compare os tipos de banco de dados SQL, NoSQL e NewSQL para uma aplicação de leitura intensiva. Para cada um, responda usando os tópicos: modelo de dados, escalabilidade, latência, consistência e custo operacional. Ao final, indique qual abordagem é mais indicada para esse cenário." |
+
+
 ## Resumo Visual Rápido
 
 ```markdown
