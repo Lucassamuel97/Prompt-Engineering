@@ -16,9 +16,11 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 ## Prompts Elaborados 
 | Nome                         | Descrição                                                                 | Exemplo                                                         |
 |------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------|
+| [Chain of Thought (CoT)](chain_of_thought.md) | A IA gera uma **sequência de raciocínio passo a passo** antes da resposta final. | `Para resolver 2 + 2, primeiro pense: 2 + 2 é igual a 4.`      |
 | [Skeleton of Thought (SoT)](skeleton_of_thought.md) | O modelo primeiro gera uma estrutura esquelética (um roteiro, tópicos ou plano) antes de gerar a resposta completa.       | `"Primeiro, gere os tópicos principais de um artigo sobre mudança climática. Depois, desenvolva cada tópico em parágrafos."`|
-| **Reflexive prompting (Self-reflection)** | Pede que a IA **avalie, critique ou melhore sua própria resposta.** | `Releia sua resposta anterior e sugira melhorias.`             |
 | [Tree-of-thought (ToT)](tree_of_thought.md) | A IA explora diferentes caminhos de raciocínio em formato de árvore, escolhendo os melhores. | `Liste várias formas de resolver esse problema e selecione a mais eficiente.` |
+| [Self-consistency prompting](self_consistency.md) | A IA gera várias respostas e escolhe a mais comum ou consistente. | `Responda a pergunta 3 vezes e escolha a resposta mais frequente.` |
+| **Reflexive prompting (Self-reflection)** | Pede que a IA **avalie, critique ou melhore sua própria resposta.** | `Releia sua resposta anterior e sugira melhorias.`             |
 | **Multimodal prompting**     | Usa múltiplos tipos de entrada, como texto, imagem, áudio, vídeo.        | `Descreva essa imagem e sugira uma legenda criativa.`          |
 | **Dynamic prompting**        | O prompt é gerado dinamicamente, com base em dados, contexto ou histórico. | *(Usado em APIs e aplicações dinâmicas.)*                      |
 | **ReAct prompting**          | Combina **raciocínio (Reasoning)** com **ação (Action)**, permitindo que a IA pense, execute e continue iterando. | `Pense: o que falta? Aja: busque no banco de dados. Continue.` |
