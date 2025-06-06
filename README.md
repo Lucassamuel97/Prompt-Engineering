@@ -24,7 +24,7 @@ Este documento apresenta as principais variações avançadas de prompts utiliza
 | **Reflexive prompting (Self-reflection)** | Pede que a IA **avalie, critique ou melhore sua própria resposta.** | `Releia sua resposta anterior e sugira melhorias.`             |
 | **Multimodal prompting**     | Usa múltiplos tipos de entrada, como texto, imagem, áudio, vídeo.        | `Descreva essa imagem e sugira uma legenda criativa.`          |
 | **Dynamic prompting**        | O prompt é gerado dinamicamente, com base em dados, contexto ou histórico. | *(Usado em APIs e aplicações dinâmicas.)*                      |
-| **ReAct prompting**          | Combina **raciocínio (Reasoning)** com **ação (Action)**, permitindo que a IA pense, execute e continue iterando. | `Pense: o que falta? Aja: busque no banco de dados. Continue.` |
+| [ReAct prompting](react_prompting.md)          | Combina **raciocínio (Reasoning)** com **ação (Action)**, permitindo que a IA pense, execute e continue iterando. | `Pense: o que falta? Aja: busque no banco de dados. Continue.` |
 
 ---
 
